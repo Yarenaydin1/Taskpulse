@@ -1,0 +1,29 @@
+/* App.css */
+.app {
+  display: grid;
+  grid-template-rows: 150px auto;
+}
+
+.app_main {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 8%;
+}
+
+.task_column {
+  width: 33.33%;
+  margin: 20px;
+}
+
+/* Responsive düzenleme */
+@media (max-width: 768px) {
+  .app_main {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .task_column {
+      width: 100%;
+      margin: 10px 0;
+  }
+}

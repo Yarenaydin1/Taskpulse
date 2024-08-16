@@ -1,0 +1,25 @@
+/* App.css */
+
+.task_column_heading {
+    display: flex;
+    align-items: center;
+}
+
+.task_column_icon {
+    width: 30px;
+    margin-right: 5px;
+}
+
+/* Responsive düzenleme */
+@media (max-width: 768px) {
+    .task_column_heading {
+        flex-direction: column; /* Daha küçük ekranlarda başlık ve ikon dikey hizalanabilir */
+        align-items: flex-start; /* Başlık ve ikon sol tarafa hizalanır */
+    }
+
+    .task_column_icon {
+        width: 24px; /* Daha küçük ekranlarda ikon boyutunu küçült */
+        margin-right: 0; /* İkonun sağındaki boşluğu kaldır */
+        margin-bottom: 5px; /* İkon ile başlık arasına boşluk ekle */
+    }
+}
